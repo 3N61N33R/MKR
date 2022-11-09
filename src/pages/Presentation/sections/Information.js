@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Lorem ipsum
                     <br />
-                    Material Kit
+                    Dolor sit amet
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "", // redirect to about us
+                  label: "Let's Go!",
                 }}
               />
             </RotatingCard>
@@ -66,20 +66,26 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="Docs"
+                  description="Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Sed euismod nisi porta lorem mollis aliquam"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
+                <DefaultInfoCard
+                  icon="price_change"
+                  title="Save Time & Money"
+                  description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                />
+              </Grid>
+              {/* <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
                   title="MUI Ready"
                   description="The world's most popular react components library for building user interfaces."
                 />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
+              </Grid> */}
+              {/* </Grid> */}
+              {/* <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
@@ -93,7 +99,7 @@ function Information() {
                   title="Fully Responsive"
                   description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
         </Grid>

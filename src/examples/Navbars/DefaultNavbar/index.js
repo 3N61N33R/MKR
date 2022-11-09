@@ -543,15 +543,15 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
           {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />}
         </MKBox>
       </MKBox>
-      {dropdownMenu}
-      {nestedDropdownMenu}
+      {/* {dropdownMenu} */}
+      {/* {nestedDropdownMenu} */}
     </Container>
   );
 }
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  brand: "TEB",
   transparent: false,
   light: false,
   action: false,
