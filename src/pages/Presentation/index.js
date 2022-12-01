@@ -21,6 +21,7 @@ import Card from "@mui/material/Card";
 import Profile from "pages/LandingPages/Author/sections/Profile";
 import Posts from "pages/LandingPages/Author/sections/Posts";
 import Footer from "pages/LandingPages/Author/sections/Footer";
+import Subscribe from "pages/Presentation/sections/Subscribe";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -119,6 +120,7 @@ function Presentation() {
           }}
         >
           <Profile />
+          <Subscribe />
           <Posts />
         </Card>
       </MKBox>
