@@ -25,6 +25,7 @@ import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+import Subscribe from "pages/Presentation/sections/Subscribe";
 
 // Images
 import bgFront from "assets/images/rotating-card-bg-front.jpeg";
@@ -32,9 +33,9 @@ import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={3}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }} mb={4}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
               <RotatingCardFront
@@ -103,6 +104,7 @@ function Information() {
             </Grid>
           </Grid>
         </Grid>
+        <Subscribe />
       </Container>
     </MKBox>
   );

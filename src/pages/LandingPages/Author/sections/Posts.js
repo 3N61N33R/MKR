@@ -33,7 +33,7 @@ import post4 from "assets/images/examples/blog2.jpg";
 
 function Places() {
   return (
-    <MKBox component="section" py={2}>
+    <MKBox component="section" py={2} mt={-15}>
       <Container>
         <Grid container item xs={12} lg={6}>
           <MKTypography variant="h3" mb={6}>

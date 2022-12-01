@@ -30,11 +30,11 @@ function Subscribe() {
     <MKBox
       component="section"
       py={2}
-      //   borderRadius="lg"
-      //   shadow="lg"
-      //   color="white"
-      //   bgColor="light"
-      //   p={2}
+      borderRadius="lg"
+      shadow="lg"
+      color="white"
+      bgColor="light"
+      p={2}
     >
       <Container>
         <Grid container item xs={12} lg={6}>
