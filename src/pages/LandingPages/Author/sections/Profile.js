@@ -16,16 +16,20 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
+// import Icon from "@mui/material/Icon";
+import Card from "@mui/material/Card";
+
+import Information from "pages/Presentation/sections/Information";
+// import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// import MKButton from "components/MKButton";
+// import MKTypography from "components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/bruce-mars.jpg";
+import profilePicture from "assets/images/city-profile.jpg";
 
 function Profile() {
   return (
@@ -36,7 +40,23 @@ function Profile() {
             <MKAvatar src={profilePicture} alt="Burce Mars" size="xxl" shadow="xl" />
           </MKBox>
           <Grid container justifyContent="center" py={6}>
-            <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
+            <Card
+              sx={{
+                p: 2,
+                mx: { xs: 2, lg: 3 },
+                mt: -8,
+                mb: 4,
+                backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
+                  rgba(white.main, 0.8),
+                backdropFilter: "saturate(200%) blur(30px)",
+                boxShadow: ({ boxShadows: { xxl } }) => xxl,
+              }}
+            >
+              {/* <Counters /> */}
+              <Information />
+              {/* <DesignBlocks /> */}
+            </Card>
+            {/* <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
                 <MKTypography variant="h3">Michael Roven</MKTypography>
                 <MKButton variant="outlined" color="info" size="small">
@@ -98,7 +118,7 @@ function Profile() {
                   More about me <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
                 </MKTypography>
               </MKTypography>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
       </Container>
